@@ -1,0 +1,46 @@
+.home-hero {
+  min-height: calc(100svh - 7rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem clamp(1rem, 4vw, 3rem);
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+     url("../assets/images/hero-loic-leotet.png") center / cover no-repeat;
+}
+
+.home-hero h1 {
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+
+.home-hero-subtitle {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.home-hero-btn {
+  display: inline-block;
+  padding: 0.8rem 1.75rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.home-hero-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-btn {
+    transition: none;
+  }
+}

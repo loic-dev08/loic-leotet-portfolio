@@ -1,0 +1,85 @@
+.legal {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: left;
+}
+
+.legal h1 {
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+.legal-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.legal-accordion details + details {
+  border-top: 1px solid var(--border);
+}
+
+.legal-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-h);
+  list-style: none;
+}
+
+.legal-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron */
+.legal-accordion summary::after {
+  content: "";
+  flex-shrink: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.legal-accordion details[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+.legal-accordion details[open] summary {
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.legal-accordion summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.legal-content {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.legal-content p {
+  margin: 0 0 0.75rem;
+}
+
+.legal-content p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-content a {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .legal-accordion summary::after {
+    transition: none;
+  }
+}

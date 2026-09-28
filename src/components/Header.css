@@ -1,0 +1,156 @@
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem clamp(1rem, 4vw, 3rem);
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo / nom - gros, assumé */
+.logo {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Liens - petits, discrets, alignés sur le bas du logo */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.2em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* Lien actif - trait discret sous le texte */
+.nav-links a.active {
+  opacity: 1;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+}
+
+/* Burger mobile */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  align-self: center;
+  color: inherit;
+  position: relative;
+  z-index: 101;
+}
+
+.burger span {
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.burger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--bg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a,
+  .burger span,
+  .nav-links {
+    transition: none;
+  }
+}
+
+/* Bouton Télécharger le CV */
+.nav-links a.nav-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  opacity: 1;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a.nav-cv:hover {
+  background: var(--text-h);
+  color: var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a.nav-cv {
+    transition: none;
+  }
+}
