@@ -106,50 +106,19 @@
   font-size: 0.85rem;
 }
 
-/* Parcours */
-.about-timeline {
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0 1.5rem;
-  border-left: 2px solid var(--border);
+.about-goal {
+  max-width: 640px;
+  margin: 0 auto 4rem;
+  text-align: center;
 }
 
-.about-timeline li {
-  position: relative;
-  padding-bottom: 2rem;
+.about-goal p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
 }
 
-.about-timeline li:last-child {
-  padding-bottom: 0;
-}
-
-.about-timeline li::before {
-  content: "";
-  position: absolute;
-  left: calc(-1.5rem - 7px);
-  top: 0.3rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.about-period {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--accent);
-}
-
-.about-timeline h3 {
-  margin: 0.2rem 0 0.4rem;
-  font-size: 1.1rem;
-  color: var(--text-h);
-}
-
-.about-timeline p {
-  margin: 0;
+.about-goal .about-btn {
+  margin-top: 0.5rem;
 }
 
 /* Mobile et tablette */

@@ -1,5 +1,6 @@
 import { useState, useEffect} from"react";
 import { NavLink, useLocation} from "react-router-dom";
+import banner from "../assets/images/banner.jpg";
 import "./Header.css";
 import { FaDownload } from "react-icons/fa";
 
@@ -13,9 +14,10 @@ function Header () {
 
     return (
 
-        <header className="navbar">
+        <header className="navbar" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)) ,url(${banner})`}}>
             <NavLink to="/" className="logo">
             Loïc Léotet</NavLink>
+           
 
             <button
             className={`burger ${menuOpen ? "open" : ""}`}

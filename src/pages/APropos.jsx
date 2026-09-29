@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import photo from "../assets/images/loic-leotet.jpg";
+import photo from "../assets/images/profil-leotet.jpg";
 import "./APropos.css";
 
 const competences = [
@@ -14,20 +14,6 @@ const competences = [
   {
     categorie: "Outils",
     items: ["Git / GitHub", "Figma", "VS Code"],
-  },
-];
-
-// À compléter avec ton vrai parcours
-const parcours = [
-  {
-    periode: "En cours",
-    titre: "Titre professionnel DWWM",
-    detail: "Développeur Web et Web Mobile : projets front-end et full-stack.",
-  },
-  {
-    periode: "[Année]",
-    titre: "[Formation ou expérience]",
-    detail: "[Description courte de ce que tu y as fait ou appris.]",
   },
 ];
 
@@ -72,16 +58,22 @@ function APropos() {
         ))}
       </div>
 
-      <h2 className="about-title">Parcours</h2>
-      <ol className="about-timeline">
-        {parcours.map((etape) => (
-          <li key={etape.titre}>
-            <span className="about-period">{etape.periode}</span>
-            <h3>{etape.titre}</h3>
-            <p>{etape.detail}</p>
-          </li>
-        ))}
-      </ol>
+      <h2 className="about-title">Ce que je recherche</h2>
+      <div className="about-goal">
+        <p>
+          [Ce que tu vises concrètement : une alternance, un premier poste en CDI, un stage de fin
+          de formation... Précise éventuellement le type d'entreprise ou de projet qui
+          t'intéresse.]
+        </p>
+        <p>Le détail de ma formation et de mes expériences est disponible dans mon CV.</p>
+        <a
+          href="/images/cv-loic-leotet.pdf"
+          download="CV-Loic-Leotet.pdf"
+          className="about-btn about-btn-outline"
+        >
+          Télécharger mon CV
+        </a>
+      </div>
     </section>
   );
 }
