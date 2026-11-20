@@ -66,7 +66,7 @@ function APropos() {
         </p>
         <p>Le détail de ma formation et de mes expériences est disponible dans mon CV.</p>
         <a
-          href="/images/cv-loic-leotet.pdf"
+          href="/Loc_LEOTET-Developpeur.pdf"
           download="CV-Loic-Leotet.pdf"
           className="about-btn about-btn-outline"
         >
