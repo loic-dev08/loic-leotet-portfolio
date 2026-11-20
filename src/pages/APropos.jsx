@@ -60,9 +60,8 @@ function APropos() {
       <h2 className="about-title">Ce que je recherche</h2>
       <div className="about-goal">
         <p>
-          [Ce que tu vises concrètement : une alternance, un premier poste en CDI, un stage de fin
-          de formation... Précise éventuellement le type d'entreprise ou de projet qui
-          t'intéresse.]
+          En fin de formation de développeur web et web mobile, je recherche un poste en CDI pour mettre mes compétences au service d’une équipe technique.
+          Je souhaite travailler sur des projets concrets, progresser auprès de développeurs expérimentés et continuer à monter en compétences sur des technologies modernes comme React et JavaScript.
         </p>
         <p>Le détail de ma formation et de mes expériences est disponible dans mon CV.</p>
         <a

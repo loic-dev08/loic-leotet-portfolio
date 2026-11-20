@@ -1,5 +1,9 @@
 import { useState } from "react";
 import "./Contact.css";
+import Modale from "./Modale";
+
+// puis dans le JSX, à l'endroit voulu :
+<Modale />
 
 // Voir plus bas comment obtenir ces deux valeurs
 const FORM_ENDPOINT = "https://formspree.io/f/VOTRE_ID";
