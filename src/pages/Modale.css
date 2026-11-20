@@ -1,10 +1,11 @@
 .modale-btn {
-  padding: 0.6rem 1.2rem;
-  border: 2px solid #0b7285;
+  padding: 0.9rem 1.6rem;
+  border: 2px solid #fff;
   border-radius: 6px;
   background: transparent;
-  color: #0b7285;
+  color: #fff;
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
 }
 

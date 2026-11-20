@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Accueil.css";
+import Modale from "./Modale";
 
 function Accueil () {
     return (
@@ -10,6 +11,7 @@ function Accueil () {
                 <Link to ="/a-propos" className="home-hero-btn">
                     En savoir plus
                 </Link>
+                <Modale />
             </div>
         </section> 
     )
