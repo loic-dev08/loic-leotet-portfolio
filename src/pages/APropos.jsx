@@ -28,13 +28,12 @@ function APropos() {
         <div className="about-text">
           <h2>Bonjour, je suis Loïc Léotet</h2>
           <p>
-            Développeur web orienté front-end, je conçois des interfaces claires, responsives et
-            accessibles avec React. Je suis également à l'aise côté serveur, avec Node.js, Express
-            et MySQL, ce qui me permet de construire une application de bout en bout.
+           Développeur web et web mobile en formation (titre professionnel niveau 5), orienté front-end, après quatre ans dans le support informatique.
+           Je conçois des interfaces modernes et centrées sur l’utilisateur, avec une approche rigoureuse du code et le réflexe de la sécurité.
           </p>
           <p>
-            Je prépare le titre professionnel de Développeur Web et Web Mobile. J'aime les projets
-            concrets, le code propre et les interfaces qui se comprennent du premier coup d'œil.
+            
+          
           </p>
 
           <div className="about-actions">
